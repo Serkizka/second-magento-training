@@ -1,0 +1,31 @@
+.filter-current {
+    .items {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 7px;
+            padding-left: 7px;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 3px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+    .filter-value{
+        display: flex;
+        align-items: center;
+    }
+    .action.remove {
+        position: relative;
+        align-items: center;
+        padding-left: 7px;
+        &:before {
+            font-weight: 500;
+            color: black;
+        }
+    }
+}
